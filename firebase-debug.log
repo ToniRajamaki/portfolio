@@ -1,0 +1,25 @@
+[debug] [2023-04-26T10:41:41.881Z] ----------------------------------------------------------------------
+[debug] [2023-04-26T10:41:41.887Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hazem\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-26T10:41:41.889Z] CLI Version:   11.29.0
+[debug] [2023-04-26T10:41:41.890Z] Platform:      win32
+[debug] [2023-04-26T10:41:41.890Z] Node Version:  v16.17.0
+[debug] [2023-04-26T10:41:41.894Z] Time:          Wed Apr 26 2023 11:41:41 GMT+0100 (Central European Standard Time)
+[debug] [2023-04-26T10:41:41.895Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-26T10:41:42.151Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-26T10:41:42.153Z] > authorizing via signed-in user (hazemfarhati@gmail.com)
+[debug] [2023-04-26T10:41:42.153Z] [iam] checking project hazem-farhati for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-04-26T10:41:42.161Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hazem-farhati:testIamPermissions [none]
+[debug] [2023-04-26T10:41:42.162Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hazem-farhati:testIamPermissions x-goog-quota-user=projects/hazem-farhati
+[debug] [2023-04-26T10:41:42.163Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hazem-farhati:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-26T10:41:43.189Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/hazem-farhati:testIamPermissions 200
+[debug] [2023-04-26T10:41:43.190Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hazem-farhati:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-04-26T10:41:43.195Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/hazem-farhati [none]
+[debug] [2023-04-26T10:41:43.644Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/hazem-farhati 200
+[debug] [2023-04-26T10:41:43.645Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/hazem-farhati {"projectId":"hazem-farhati","projectNumber":"785181180982","displayName":"Hazem-Farhati","name":"projects/hazem-farhati","resources":{"hostingSite":"hazem-farhati"},"state":"ACTIVE","etag":"1_625c5b15-bc07-415c-a456-1072a5c5b37b"}
+[info] 
+[info] === Deploying to 'hazem-farhati'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-04-26T10:41:43.662Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/hazem-farhati/versions [none]
+[debug] [2023-04-26T10:41:43.662Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/hazem-farhati/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
