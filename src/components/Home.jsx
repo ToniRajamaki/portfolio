@@ -15,8 +15,8 @@ const Home = ({theme}) => {
 
             <div className="home__img">
               <img
-                src="/assets/toni/profile_picture.png"
-                alt="about__img"
+                src="/assets/hazem1.png"
+                alt="abosdfsdfsdfsdaaaaaaaaafsdfutdds__img"
                 className="home__img"
               />
             </div>
